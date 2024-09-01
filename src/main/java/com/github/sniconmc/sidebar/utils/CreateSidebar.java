@@ -21,7 +21,7 @@ public class CreateSidebar {
             String id = "row" + index;
 
             // Text
-            Component content = TextUtils.convertStringToComponent(layout.getLayout().get(index));
+            Component content = TextUtils.convertStringToComponent(layout.getLayout().get(index-1));
 
             // Create the line
             Sidebar.ScoreboardLine line1 = new Sidebar.ScoreboardLine(

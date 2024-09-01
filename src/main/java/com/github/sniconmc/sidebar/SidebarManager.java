@@ -46,7 +46,8 @@ public class SidebarManager {
         String data = dataFileJSONData.get(sidebarName);
 
         if (data == null) {
-            SidebarMain.logger.error("Sidebar not found {}", sidebarName);
+            SidebarMain.logger.error("Sidebar not found: {}", sidebarName);
+            return;
         }
 
         String placeholderReplacedJson = PlaceholderReplacer.replacePlaceholders(player, data);
