@@ -16,12 +16,18 @@ public class CreateSidebar {
 
         Sidebar sidebar = new Sidebar(title);
 
-        for (List<String> text : layout.getLayout()) {
-            int index = layout.getLayout().size() - layout.getLayout().indexOf(text);
+        // Get the layout list once to avoid multiple method calls
+        List<List<String>> layoutList = layout.getLayout();
+
+        // Loop in reverse order
+        for (int i = layoutList.size() - 1; i >= 0; i--) {
+            List<String> text = layoutList.get(i);  // Get the current text list
+
+            int index = layoutList.size() - i;  // Calculate the index correctly
             String id = "row" + index;
 
             // Text
-            Component content = TextUtils.convertStringToComponent(layout.getLayout().get(index-1));
+            Component content = TextUtils.convertStringToComponent(text); // Adjust as needed
 
             // Create the line
             Sidebar.ScoreboardLine line1 = new Sidebar.ScoreboardLine(
@@ -33,6 +39,8 @@ public class CreateSidebar {
 
             sidebar.createLine(line1);
         }
+
         return sidebar;
     }
 }
+
