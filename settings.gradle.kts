@@ -1,2 +1,2 @@
-rootProject.name = "Minestom-Sidebar"
+rootProject.name = "Sidebar"
 

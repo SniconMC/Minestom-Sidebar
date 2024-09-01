@@ -39,9 +39,9 @@ publishing {
             from(components["java"])
 
             pom{
-                name = "Minestom-Sidebar"
+                name = "Sidebar"
                 description = project.description
-                url = "https://github.com/SniconMC/Minestom-Sidebar"
+                url = "https://github.com/SniconMC/Sidebar"
                 licenses {
                     license {
                         name = "The GNU Affero General Public License Version 3"
