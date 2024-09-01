@@ -1,2 +1,2 @@
 # Sidebar
-Sidebar dependency for the SniconMC network 
+Sidebar dependency for the SniconMC Network
