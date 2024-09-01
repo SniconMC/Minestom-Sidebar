@@ -1,2 +1,2 @@
-# Minestom-Sidebar
-Sidebar plugin for SniconMC network
+# Sidebar
+Sidebar dependency for the SniconMC Network
