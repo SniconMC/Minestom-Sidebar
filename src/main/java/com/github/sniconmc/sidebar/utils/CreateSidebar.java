@@ -12,7 +12,7 @@ public class CreateSidebar {
 
     public Sidebar build(SidebarLayout layout) {
 
-        Component title = TextUtils.convertStringToComponent(layout.getTitle());
+        Component title = TextUtils.convertStringListToComponent(layout.getTitle());
 
         Sidebar sidebar = new Sidebar(title);
 
@@ -27,7 +27,7 @@ public class CreateSidebar {
             String id = "row" + index;
 
             // Text
-            Component content = TextUtils.convertStringToComponent(text); // Adjust as needed
+            Component content = TextUtils.convertStringListToComponent(text); // Adjust as needed
 
             // Create the line
             Sidebar.ScoreboardLine line1 = new Sidebar.ScoreboardLine(

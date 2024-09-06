@@ -45,7 +45,7 @@ public class SidebarCommand extends Command {
 
             if (actionString.equalsIgnoreCase("reload")) {
                 SidebarManager.reloadSidebars();
-                player.sendMessage(TextUtils.convertStringToComponent(List.of("<green>Reloaded Sidebar</green>")));
+                player.sendMessage(TextUtils.convertStringToComponent("<green>Reloaded Sidebar</green>"));
             }
         }, reloadArgument);
     }
