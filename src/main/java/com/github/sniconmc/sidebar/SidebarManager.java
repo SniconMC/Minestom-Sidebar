@@ -41,6 +41,11 @@ public class SidebarManager {
         }
     }
 
+    public static void updateCurrentSidebar(Player player){
+        setSidebar(player, currentSidebar.get(player));
+    }
+
+
     public static void setSidebar(Player player, String sidebarName) {
 
         String data = dataFileJSONData.get(sidebarName);
